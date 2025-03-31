@@ -15,21 +15,21 @@ $discard,site=ehow.com
 $discard,site=livestrong.com
 
 # Downrank generic commercial and SEO spam sites
-$downrank,site=*.co
-$downrank,site=*.biz
-$downrank,site=*.info
-$downrank,site=*.online
-$downrank,site=*.shop
-$downrank,site=*.store
+$downrank,site=.co
+$downrank,site=.biz
+$downrank,site=.info
+$downrank,site=.online
+$downrank,site=.shop
+$downrank,site=.store
 
 # Boost academic and research domains (TLDs)
-$boost=5,site=*.edu
-$boost=5,site=*.org
-$boost=3,site=*.gov
-$boost=2,site=*.ac.uk
-$boost=2,site=*.edu.au
-$boost=2,site=*.edu.in
-$boost=2,site=*.edu.cn
+$boost=5,site=.edu
+$boost=5,site=.org
+$boost=3,site=.gov
+$boost=2,site=.ac.uk
+$boost=2,site=.edu.au
+$boost=2,site=.edu.in
+$boost=2,site=.edu.cn
 
 # Boost specific academic and research institutions
 $boost=5,site=arxiv.org
