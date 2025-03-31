@@ -1,7 +1,7 @@
 ! name: Academic & Research
 ! description: Rerank results to boost content from academic and research-focused sites. Includes university domains, research institutes, and reputable academic blogs.
 ! public: true
-! author: Goggles 101
+! author: Pratham
 
 $discard
 $downrank,site=medium.com
@@ -39,7 +39,7 @@ $boost=2,site=epfl.ch
 $boost=2,site=ucl.ac.uk
 $boost=2,site=imperial.ac.uk
 $boost=2,site=ed.ac.uk
-$boost=2,site=toronto.edu
+$boost=2,site=utoronto.ca
 $boost=2,site=mcmaster.ca
 $boost=2,site=ubc.ca
 $boost=2,site=wisc.edu
@@ -58,21 +58,8 @@ $boost=2,site=ucsd.edu
 $boost=2,site=ucsb.edu
 $boost=2,site=indiana.edu
 $boost=2,site=psu.edu
-$boost=2,site=university.edu
-$boost=2,site=*.edu
-$boost=2,site=*.ac.uk
-$boost=2,site=*.ac.jp
-$boost=2,site=*.ac.in
-$boost=2,site=*.ac.au
-$boost=2,site=*.edu.au
-$boost=2,site=*.edu.cn
-$boost=2,site=*.edu.sg
-$boost=2,site=*.edu.hk
-$boost=2,site=*.edu.br
-$boost=2,site=*.edu.mx
-$boost=2,site=*.edu.ca
-$boost=2,site=*.gov (for government research sites)
-$boost=2,site=*.gov.uk
+
+# Government & Research Institutions
 $boost=2,site=nasa.gov
 $boost=2,site=nsf.gov
 $boost=2,site=nih.gov
@@ -108,18 +95,16 @@ $boost=2,site=foreignaffairs.com
 $boost=2,site=foreignpolicy.com
 $boost=2,site=carnegieendowment.org
 $boost=2,site=wilsoncenter.org
-$boost=2,site=rand.org
 $boost=2,site=sipri.org
 $boost=2,site=iiss.org
 $boost=2,site=atlanticcouncil.org
-$boost=2,site=brookings.edu
 $boost=2,site=cnas.org
 $boost=2,site=csbaonline.org
 $boost=2,site=cisac.fsi.stanford.edu
 $boost=2,site=fas.org
 $boost=2,site=armscontrol.org
-$boost=2,site=nature.com
-$boost=2,site=sciencemag.org
+
+# Science & Technology Journals
 $boost=2,site=pnas.org
 $boost=2,site=nejm.org
 $boost=2,site=lancet.com
@@ -138,7 +123,7 @@ $boost=2,site=sciencedaily.com
 $boost=2,site=discovermagazine.com
 $boost=2,site=quantamagazine.org
 
-# Boost blogs by academics and researchers
+# Academic Blogs
 $boost=3,site=danluu.com
 $boost=3,site=paulgraham.com
 $boost=3,site=scottaaronson.com
@@ -157,6 +142,7 @@ $boost=3,site=lukesmith.xyz
 $boost=3,site=danwang.co
 $boost=3,site=stratechery.com
 
+# Boost research-related pages within sites
 $boost=1,/blog/
 $boost=1,/research/
 $boost=1,/engineering/
