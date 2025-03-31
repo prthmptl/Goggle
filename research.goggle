@@ -1,64 +1,163 @@
-title: Academic & Research Focused
-description: Prioritizes academic and research papers while filtering out mainstream media and non-scholarly sources.
-version: 1.0
-author: YourName
-source: https://search.brave.com/goggles
-license: CC0
+! name: Academic & Research
+! description: Rerank results to boost content from academic and research-focused sites. Includes university domains, research institutes, and reputable academic blogs.
+! public: true
+! author: Goggles 101
 
-# Boost academic and research sources
-+ site:researchgate.net
-+ site:arxiv.org
-+ site:jstor.org
-+ site:ncbi.nlm.nih.gov
-+ site:sciencedirect.com
-+ site:ieee.org
-+ site:springer.com
-+ site:nature.com
-+ site:plos.org
-+ site:sciencemag.org
-+ site:academia.edu
-+ site:cambridge.org
-+ site:oxfordjournals.org
-+ site:mdpi.com
-+ site:cell.com
-+ site:thelancet.com
-+ site:scirp.org
-+ site:hindawi.com
-+ site:pnas.org
-+ site:annualreviews.org
-+ site:biomedcentral.com
-+ site:frontiersin.org
-+ site:aps.org
-+ site:royalsocietypublishing.org
-+ site:aaas.org
-+ site:bmj.com
-+ site:aclweb.org
-+ site:core.ac.uk
-+ site:semanticscholar.org
-+ site:europepmc.org
-+ site:spiedigitallibrary.org
-+ site:link.springer.com
-+ site:epistemicinsight.com
-+ site:scielo.org
-+ site:openedition.org
+$discard
+$downrank,site=medium.com
+$downrank,site=quora.com
+$downrank,site=reddit.com
 
-# Block non-academic or unreliable sources
-- site:quora.com
-- site:pinterest.com
-- site:wikipedia.org
-- site:medium.com
-- site:buzzfeed.com
-- site:reddit.com
-- site:tiktok.com
-- site:forbes.com
-- site:entrepreneur.com
-- site:theconversation.com
-- site:newsweek.com
-- site:nationalgeographic.com
-- site:history.com
-- site:bbc.com
-- site:cnn.com
-- site:foxnews.com
-- site:nytimes.com
-- site:theguardian.com
-- site:usatoday.com
+$boost=2,site=arxiv.org
+$boost=2,site=ssrn.com
+$boost=2,site=jstor.org
+$boost=2,site=researchgate.net
+$boost=2,site=pubmed.ncbi.nlm.nih.gov
+$boost=2,site=sciencedirect.com
+$boost=2,site=springer.com
+$boost=2,site=nature.com
+$boost=2,site=sciencemag.org
+$boost=2,site=cell.com
+$boost=2,site=plos.org
+$boost=2,site=ieee.org
+$boost=2,site=acm.org
+$boost=2,site=cambridge.org
+$boost=2,site=oup.com
+$boost=2,site=tandfonline.com
+$boost=2,site=mit.edu
+$boost=2,site=harvard.edu
+$boost=2,site=stanford.edu
+$boost=2,site=ox.ac.uk
+$boost=2,site=cam.ac.uk
+$boost=2,site=berkeley.edu
+$boost=2,site=columbia.edu
+$boost=2,site=princeton.edu
+$boost=2,site=yale.edu
+$boost=2,site=caltech.edu
+$boost=2,site=ethz.ch
+$boost=2,site=epfl.ch
+$boost=2,site=ucl.ac.uk
+$boost=2,site=imperial.ac.uk
+$boost=2,site=ed.ac.uk
+$boost=2,site=toronto.edu
+$boost=2,site=mcmaster.ca
+$boost=2,site=ubc.ca
+$boost=2,site=wisc.edu
+$boost=2,site=uchicago.edu
+$boost=2,site=cornell.edu
+$boost=2,site=upenn.edu
+$boost=2,site=jhu.edu
+$boost=2,site=umich.edu
+$boost=2,site=nyu.edu
+$boost=2,site=washington.edu
+$boost=2,site=utexas.edu
+$boost=2,site=usc.edu
+$boost=2,site=gatech.edu
+$boost=2,site=illinois.edu
+$boost=2,site=ucsd.edu
+$boost=2,site=ucsb.edu
+$boost=2,site=indiana.edu
+$boost=2,site=psu.edu
+$boost=2,site=university.edu
+$boost=2,site=*.edu
+$boost=2,site=*.ac.uk
+$boost=2,site=*.ac.jp
+$boost=2,site=*.ac.in
+$boost=2,site=*.ac.au
+$boost=2,site=*.edu.au
+$boost=2,site=*.edu.cn
+$boost=2,site=*.edu.sg
+$boost=2,site=*.edu.hk
+$boost=2,site=*.edu.br
+$boost=2,site=*.edu.mx
+$boost=2,site=*.edu.ca
+$boost=2,site=*.gov (for government research sites)
+$boost=2,site=*.gov.uk
+$boost=2,site=nasa.gov
+$boost=2,site=nsf.gov
+$boost=2,site=nih.gov
+$boost=2,site=noaa.gov
+$boost=2,site=who.int
+$boost=2,site=unesco.org
+$boost=2,site=un.org
+$boost=2,site=worldbank.org
+$boost=2,site=oecd.org
+$boost=2,site=wipo.int
+$boost=2,site=imf.org
+$boost=2,site=weforum.org
+$boost=2,site=rand.org
+$boost=2,site=brookings.edu
+$boost=2,site=aei.org
+$boost=2,site=cfr.org
+$boost=2,site=csis.org
+$boost=2,site=pewresearch.org
+$boost=2,site=epi.org
+$boost=2,site=fra.europa.eu
+$boost=2,site=cepr.org
+$boost=2,site=nber.org
+$boost=2,site=voxeu.org
+$boost=2,site=ecb.europa.eu
+$boost=2,site=bis.org
+$boost=2,site=bruegel.org
+$boost=2,site=policyexchange.org.uk
+$boost=2,site=chathamhouse.org
+$boost=2,site=merics.org
+$boost=2,site=asiafoundation.org
+$boost=2,site=asiasociety.org
+$boost=2,site=foreignaffairs.com
+$boost=2,site=foreignpolicy.com
+$boost=2,site=carnegieendowment.org
+$boost=2,site=wilsoncenter.org
+$boost=2,site=rand.org
+$boost=2,site=sipri.org
+$boost=2,site=iiss.org
+$boost=2,site=atlanticcouncil.org
+$boost=2,site=brookings.edu
+$boost=2,site=cnas.org
+$boost=2,site=csbaonline.org
+$boost=2,site=cisac.fsi.stanford.edu
+$boost=2,site=fas.org
+$boost=2,site=armscontrol.org
+$boost=2,site=nature.com
+$boost=2,site=sciencemag.org
+$boost=2,site=pnas.org
+$boost=2,site=nejm.org
+$boost=2,site=lancet.com
+$boost=2,site=jamanetwork.com
+$boost=2,site=bmj.com
+$boost=2,site=elifesciences.org
+$boost=2,site=frontiersin.org
+$boost=2,site=wiley.com
+$boost=2,site=hindawi.com
+$boost=2,site=mdpi.com
+$boost=2,site=the-scientist.com
+$boost=2,site=phys.org
+$boost=2,site=livescience.com
+$boost=2,site=newscientist.com
+$boost=2,site=sciencedaily.com
+$boost=2,site=discovermagazine.com
+$boost=2,site=quantamagazine.org
+
+# Boost blogs by academics and researchers
+$boost=3,site=danluu.com
+$boost=3,site=paulgraham.com
+$boost=3,site=scottaaronson.com
+$boost=3,site=overcomingbias.com
+$boost=3,site=slatestarcodex.com
+$boost=3,site=gwern.net
+$boost=3,site=nintil.com
+$boost=3,site=marginalrevolution.com
+$boost=3,site=noahpinion.substack.com
+$boost=3,site=experimentalhistory.substack.com
+$boost=3,site=astralcodexten.substack.com
+$boost=3,site=fasterthanli.me
+$boost=3,site=ribbonfarm.com
+$boost=3,site=meltingasphalt.com
+$boost=3,site=lukesmith.xyz
+$boost=3,site=danwang.co
+$boost=3,site=stratechery.com
+
+$boost=1,/blog/
+$boost=1,/research/
+$boost=1,/engineering/
+$boost=1,/publications/
