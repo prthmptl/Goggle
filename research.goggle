@@ -1,9 +1,9 @@
-# Mandatory Metadata
 title: Academic & Research Focused
 description: Prioritizes academic and research papers while filtering out mainstream media and non-scholarly sources.
 version: 1.0
-author: YourName (optional)
+author: YourName
 source: https://search.brave.com/goggles
+license: CC0
 
 # Boost academic and research sources
 + site:researchgate.net
