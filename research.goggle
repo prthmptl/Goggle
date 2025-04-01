@@ -1,143 +1,145 @@
-! name: Academic & Research
-! description: Rerank results to boost content from academic and research-focused sites. Includes university domains, research institutes, and reputable academic blogs.
+! name: Academic Research
+! description: Boost academic and research-focused websites while downranking SEO-heavy and spam sites
 ! public: true
-! author: Goggles 101
+! author: Claude
+! avatar: #4B0082
 
+! Remove results not matching any other rule
 $discard
-$downrank,site=medium.com
-$downrank,site=quora.com
-$downrank,site=reddit.com
 
-$boost=2,site=arxiv.org
-$boost=2,site=ssrn.com
-$boost=2,site=jstor.org
-$boost=2,site=researchgate.net
-$boost=2,site=pubmed.ncbi.nlm.nih.gov
-$boost=2,site=sciencedirect.com
-$boost=2,site=springer.com
-$boost=2,site=nature.com
-$boost=2,site=sciencemag.org
-$boost=2,site=cell.com
-$boost=2,site=plos.org
-$boost=2,site=ieee.org
-$boost=2,site=acm.org
-$boost=2,site=cambridge.org
-$boost=2,site=oup.com
-$boost=2,site=tandfonline.com
-$boost=2,site=mit.edu
-$boost=2,site=harvard.edu
-$boost=2,site=stanford.edu
-$boost=2,site=ox.ac.uk
-$boost=2,site=cam.ac.uk
-$boost=2,site=berkeley.edu
-$boost=2,site=columbia.edu
-$boost=2,site=princeton.edu
-$boost=2,site=yale.edu
-$boost=2,site=caltech.edu
-$boost=2,site=ethz.ch
-$boost=2,site=epfl.ch
-$boost=2,site=ucl.ac.uk
-$boost=2,site=imperial.ac.uk
-$boost=2,site=ed.ac.uk
-$boost=2,site=utoronto.ca
-$boost=2,site=mcmaster.ca
-$boost=2,site=ubc.ca
-$boost=2,site=wisc.edu
-$boost=2,site=uchicago.edu
-$boost=2,site=cornell.edu
-$boost=2,site=upenn.edu
-$boost=2,site=jhu.edu
-$boost=2,site=umich.edu
-$boost=2,site=nyu.edu
-$boost=2,site=washington.edu
-$boost=2,site=utexas.edu
-$boost=2,site=usc.edu
-$boost=2,site=gatech.edu
-$boost=2,site=illinois.edu
-$boost=2,site=ucsd.edu
-$boost=2,site=ucsb.edu
-$boost=2,site=indiana.edu
-$boost=2,site=psu.edu
+! Boost academic domains
+$boost=4,site=edu
+$boost=4,site=ac.uk
+$boost=4,site=ac.jp
+$boost=3,site=edu.au
+$boost=3,site=ac.nz
+$boost=3,site=uni-*.de
+$boost=3,site=*.uni-*.de
+$boost=3,site=*.ac.at
+$boost=3,site=*.ac.il
+$boost=3,site=*.edu.cn
+$boost=3,site=*.edu.sg
+$boost=3,site=*.edu.hk
 
-# Government & Research Institutions
-$boost=2,site=nasa.gov
-$boost=2,site=nsf.gov
-$boost=2,site=nih.gov
-$boost=2,site=noaa.gov
-$boost=2,site=who.int
-$boost=2,site=unesco.org
-$boost=2,site=un.org
-$boost=2,site=worldbank.org
-$boost=2,site=oecd.org
-$boost=2,site=wipo.int
-$boost=2,site=imf.org
-$boost=2,site=weforum.org
-$boost=2,site=rand.org
-$boost=2,site=brookings.edu
-$boost=2,site=aei.org
-$boost=2,site=cfr.org
-$boost=2,site=csis.org
-$boost=2,site=pewresearch.org
-$boost=2,site=epi.org
-$boost=2,site=fra.europa.eu
-$boost=2,site=cepr.org
-$boost=2,site=nber.org
-$boost=2,site=voxeu.org
-$boost=2,site=ecb.europa.eu
-$boost=2,site=bis.org
-$boost=2,site=bruegel.org
-$boost=2,site=policyexchange.org.uk
-$boost=2,site=chathamhouse.org
-$boost=2,site=merics.org
-$boost=2,site=asiafoundation.org
-$boost=2,site=asiasociety.org
-$boost=2,site=foreignaffairs.com
-$boost=2,site=foreignpolicy.com
-$boost=2,site=carnegieendowment.org
-$boost=2,site=wilsoncenter.org
-$boost=2,site=sipri.org
-$boost=2,site=iiss.org
-$boost=2,site=atlanticcouncil.org
-$boost=2,site=cnas.org
-$boost=2,site=csbaonline.org
-$boost=2,site=cisac.fsi.stanford.edu
-$boost=2,site=fas.org
-$boost=2,site=armscontrol.org
+! Boost research institutions and repositories
+$boost=4,site=arxiv.org
+$boost=4,site=ncbi.nlm.nih.gov
+$boost=4,site=science.org
+$boost=4,site=nature.com
+$boost=4,site=sciencedirect.com
+$boost=4,site=jstor.org
+$boost=4,site=pnas.org
+$boost=4,site=pubmed.gov
+$boost=3,site=researchgate.net
+$boost=3,site=academia.edu
+$boost=3,site=biorxiv.org
+$boost=3,site=medrxiv.org
+$boost=3,site=plos.org
+$boost=3,site=ieee.org
+$boost=3,site=acm.org
+$boost=3,site=aps.org
+$boost=3,site=acs.org
+$boost=3,site=cell.com
+$boost=3,site=github.io
+$boost=3,site=proceedings.mlr.press
+$boost=3,site=semanticscholar.org
+$boost=3,site=springer.com
+$boost=3,site=tandfonline.com
+$boost=3,site=wiley.com
+$boost=3,site=elsevier.com
+$boost=3,site=frontiersin.org
+$boost=3,site=scholar.google.com
+$boost=3,site=worldbank.org
+$boost=3,site=oecd.org
+$boost=3,site=who.int
+$boost=3,site=nih.gov
+$boost=3,site=cdc.gov
+$boost=3,site=europa.eu
+$boost=3,site=un.org
+$boost=3,site=imf.org
 
-# Science & Technology Journals
-$boost=2,site=pnas.org
-$boost=2,site=nejm.org
-$boost=2,site=lancet.com
-$boost=2,site=jamanetwork.com
-$boost=2,site=bmj.com
-$boost=2,site=elifesciences.org
-$boost=2,site=frontiersin.org
-$boost=2,site=wiley.com
-$boost=2,site=hindawi.com
-$boost=2,site=mdpi.com
-$boost=2,site=the-scientist.com
-$boost=2,site=phys.org
-$boost=2,site=livescience.com
-$boost=2,site=newscientist.com
-$boost=2,site=sciencedaily.com
-$boost=2,site=discovermagazine.com
-$boost=2,site=quantamagazine.org
+! Boost scientific and academic publishers
+$boost=3,site=oxford*.com
+$boost=3,site=cambridge*.org
+$boost=3,site=mit.edu
+$boost=3,site=harvard.edu
+$boost=3,site=stanford.edu
+$boost=3,site=berkeley.edu
+$boost=3,site=caltech.edu
+$boost=3,site=princeton.edu
+$boost=3,site=cornell.edu
+$boost=3,site=columbia.edu
+$boost=3,site=yale.edu
+$boost=3,site=uchicago.edu
 
-# Academic Blogs
-$boost=3,site=danluu.com
-$boost=3,site=paulgraham.com
-$boost=3,site=scottaaronson.com
-$boost=3,site=overcomingbias.com
-$boost=3,site=slatestarcodex.com
-$boost=3,site=gwern.net
-$boost=3,site=nintil.com
-$boost=3,site=marginalrevolution.com
-$boost=3,site=noahpinion.substack.com
-$boost=3,site=experimentalhistory.substack.com
-$boost=3,site=astralcodexten.substack.com
-$boost=3,site=fasterthanli.me
-$boost=3,site=ribbonfarm.com
-$boost=3,site=meltingasphalt.com
-$boost=3,site=lukesmith.xyz
-$boost=3,site=danwang.co
-$boost=3,site=stratechery.com
+! Boost academic content indicators
+*research*$boost=2
+*study*$boost=2
+*journal*$boost=2
+*paper*$boost=2
+*science*$boost=2
+*scholar*$boost=2
+*academic*$boost=2
+*professor*$boost=1
+*phd*$boost=1
+*thesis*$boost=1
+*dissertation*$boost=1
+*proceedings*$boost=1
+*bibliography*$boost=1
+*peer review*$boost=2
+*doi:*$boost=3
+
+! Boost specific academic paths
+/publications/$boost=2
+/research/$boost=2
+/journal/$boost=2
+/proceedings/$boost=2
+/papers/$boost=2
+/faculty/$boost=1
+/lab/$boost=1
+/repository/$boost=1
+/thesis/$boost=1
+/dissertation/$boost=1
+/conference/$boost=1
+
+! Downrank SEO-heavy sites
+$boost=-3,site=quora.com
+$boost=-3,site=pinterest.com
+$boost=-3,site=medium.com
+$boost=-2,site=linkedin.com
+$boost=-2,site=yahoo.com
+$boost=-2,site=facebook.com
+$boost=-3,site=blogspot.com
+$boost=-3,site=wordpress.com
+$boost=-2,site=wikihow.com
+$boost=-2,site=buzzfeed.com
+$boost=-2,site=hubpages.com
+$boost=-2,site=answers.com
+$boost=-2,site=ask.com
+$boost=-2,site=ebay.com
+$boost=-3,site=example.com
+
+! Downrank content farm/spam indicators
+*best*$boost=-1
+*top 10*$boost=-2
+*click here*$boost=-3
+*this one trick*$boost=-3
+*you won't believe*$boost=-3
+*doctors hate*$boost=-3
+*one weird trick*$boost=-3
+*ultimate guide*$boost=-1
+*make money*$boost=-2
+*weight loss*$boost=-1
+*crypto*$boost=-1
+*affiliate*$boost=-2
+*sponsored*$boost=-2
+*advertisement*$boost=-1
+
+! Downrank specific spam/SEO paths
+/sponsored/$boost=-3
+/affiliate/$boost=-3
+/ads/$boost=-3
+/advertorial/$boost=-3
+/listicle/$boost=-2
+/best-of/$boost=-2
+/top-10/$boost=-2
