@@ -141,9 +141,3 @@ $boost=3,site=meltingasphalt.com
 $boost=3,site=lukesmith.xyz
 $boost=3,site=danwang.co
 $boost=3,site=stratechery.com
-
-# Boost research-related pages within sites
-$boost=1,/blog/
-$boost=1,/research/
-$boost=1,/engineering/
-$boost=1,/publications/
