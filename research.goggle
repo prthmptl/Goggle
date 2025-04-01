@@ -118,27 +118,3 @@ $boost=-2,site=answers.com
 $boost=-2,site=ask.com
 $boost=-2,site=ebay.com
 $boost=-3,site=example.com
-
-! Downrank content farm/spam indicators
-*best*$boost=-1
-*top-10*$boost=-2
-*clickhere*$boost=-3
-*trick*$boost=-3
-*wonbelieve*$boost=-3
-*hate*$boost=-3
-*ultimateguide*$boost=-1
-*makemoney*$boost=-2
-*weightloss*$boost=-1
-*crypto*$boost=-1
-*affiliate*$boost=-2
-*sponsored*$boost=-2
-*advertisement*$boost=-1
-
-! Downrank specific spam/SEO paths
-/sponsored/$boost=-3
-/affiliate/$boost=-3
-/ads/$boost=-3
-/advertorial/$boost=-3
-/listicle/$boost=-2
-/best-of/$boost=-2
-/top-10/$boost=-2
