@@ -1,0 +1,94 @@
+! name: Academic & Research Focus
+! description: Prioritizes content from academic institutions, research organizations, and peer-reviewed sources. Downranks SEO spam and low-quality content mills.
+! public: true
+! author: Grok 3 (xAI)
+
+# Discard low-quality, SEO-heavy, or content mill sites
+$discard,site=ezinearticles.com
+$discard,site=hubpages.com
+$discard,site=quora.com
+$discard,site=medium.com
+$discard,site=blogspot.com
+$discard,site=wordpress.com
+$discard,site=about.com
+$discard,site=ehow.com
+$discard,site=livestrong.com
+
+# Downrank generic commercial and SEO spam sites
+$downrank,site=*.co
+$downrank,site=*.biz
+$downrank,site=*.info
+$downrank,site=*.online
+$downrank,site=*.shop
+$downrank,site=*.store
+
+# Boost academic and research domains (TLDs)
+$boost=5,site=*.edu
+$boost=5,site=*.org
+$boost=3,site=*.gov
+$boost=2,site=*.ac.uk
+$boost=2,site=*.edu.au
+$boost=2,site=*.edu.in
+$boost=2,site=*.edu.cn
+
+# Boost specific academic and research institutions
+$boost=5,site=arxiv.org
+$boost=5,site=researchgate.net
+$boost=5,site=scholar.google.com
+$boost=5,site=jstor.org
+$boost=5,site=pubmed.ncbi.nlm.nih.gov
+$boost=5,site=ieee.org
+$boost=5,site=acm.org
+$boost=5,site=springer.com
+$boost=5,site=elsevier.com
+$boost=5,site=mit.edu
+$boost=5,site=stanford.edu
+$boost=5,site=harvard.edu
+$boost=5,site=ox.ac.uk
+$boost=5,site=cam.ac.uk
+$boost=5,site=berkeley.edu
+$boost=5,site=princeton.edu
+$boost=5,site=yale.edu
+$boost=5,site=caltech.edu
+$boost=5,site=ethz.ch
+$boost=5,site=epfl.ch
+
+# Boost research-focused paths
+/research^$boost=4
+/publications^$boost=4
+/papers^$boost=4
+/academic^$boost=4
+/studies^$boost=4
+/journal^$boost=4
+/articles^$boost=4
+/thesis^$boost=4
+/dissertation^$boost=4
+
+# Boost specific research organizations and labs
+$boost=4,site=nasa.gov
+$boost=4,site=nih.gov
+$boost=4,site=cern.ch
+$boost=4,site=fnal.gov
+$boost=4,site=lanl.gov
+$boost=4,site=sciencedirect.com
+$boost=4,site=plos.org
+$boost=4,site=doaj.org
+
+# Boost open-access and preprint platforms
+$boost=3,site=biorxiv.org
+$boost=3,site=medrxiv.org
+$boost=3,site=ssrn.com
+$boost=3,site=osf.io
+
+# Downrank social media and user-generated content
+$downrank,site=reddit.com
+$downrank,site=twitter.com
+$downrank,site=facebook.com
+$downrank,site=linkedin.com
+$downrank,site=youtube.com
+
+# Downrank news aggregators and clickbait
+$downrank,site=buzzfeed.com
+$downrank,site=huffpost.com
+$downrank,site=yahoo.com
+$downrank,site=msn.com
