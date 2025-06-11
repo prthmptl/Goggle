@@ -89,17 +89,17 @@ $boost=6,site=codecademy.com
 // Company Engineering Blogs
 $boost=6,site=engineering.fb.com
 $boost=6,site=netflixtechblog.com
-$boost=6,site=uber.com/blog/engineering
+$boost=6,site=uber.com/blog
 $boost=6,site=dropbox.tech
 $boost=6,site=eng.airbnb.com
 $boost=6,site=engineering.atspotify.com
 $boost=6,site=githubengineering.com
-$boost=6,site=blog.twitter.com/engineering
+$boost=6,site=blog.twitter.com
 $boost=6,site=engineering.linkedin.com
 $boost=6,site=slack.engineering
 $boost=6,site=eng.lyft.com
-$boost=6,site=medium.com/airbnb-engineering
-$boost=6,site=medium.com/netflix-techblog
+
+
 
 // =============================================================================
 // MODERATE BOOST - USEFUL BUT MIXED QUALITY
@@ -114,7 +114,7 @@ $boost=3,site=gizmodo.com
 
 // Wikipedia (generally good for tech concepts)
 $boost=4,site=en.wikipedia.org
-$boost=3,site=*.wikipedia.org
+
 
 // =============================================================================
 // CONTENT FARM AND SEO SPAM - HEAVY DOWNRANK OR DISCARD
@@ -125,8 +125,8 @@ $discard,site=ehow.com
 $discard,site=wikihow.com
 $discard,site=answers.com
 $discard,site=ask.com
-$discard,site=yahoo.com/answers
-$discard,site=quora.com/*/answer/*
+$discard,site=yahoo.com
+$discard,site=quora.com
 $downrank=10,site=quora.com
 
 // Low-Quality Tutorial Mills
@@ -135,13 +135,13 @@ $discard,site=javatpoint.com
 $discard,site=geeksforgeeks.org
 $discard,site=programiz.com
 $discard,site=w3schools.com
-$downrank=8,site=codecademy.com/forum-questions
+$downrank=8,site=codecademy.com
 
 // Spam Domains and Scrapers
-$discard,site=*.blogspot.com
-$discard,site=*.wordpress.com/*/feed
+$discard,site=blogspot.com
+$discard,site=wordpress.com
 $discard,site=feedburner.com
-$discard,site=medium.com/feed
+$discard,site=medium.com
 $downrank=8,site=medium.com
 
 // Pinterest and Social Media Spam
@@ -154,48 +154,14 @@ $discard,site=pinterest.it
 $discard,site=pinterest.es
 $discard,site=instagram.com
 $discard,site=facebook.com
-$discard,site=twitter.com/search
+$discard,site=twitter.com
 
 // PDF Spam and Document Mills
-$downrank=5,*.pdf
+
 $discard,site=scribd.com
 $discard,site=slideshare.net
 $discard,site=academia.edu
-$discard,site=researchgate.net/publication
-
-// =============================================================================
-// SPECIFIC ANTI-SPAM PATTERNS
-// =============================================================================
-
-// Block common spam URL patterns
-$discard,/how-to-*-in-*-easy-steps/
-$discard,/ultimate-guide-to-*/
-$discard,/complete-tutorial-*/
-$discard,/*-tutorial-for-beginners/
-$discard,/learn-*-in-*-minutes/
-$discard,/top-*-tools-for-*/
-$discard,/*-vs-*-which-is-better/
-$discard,/best-*-for-*/
-$discard,/*-cheat-sheet/
-$downrank=5,/*/amp/
-
-// Block low-quality comparison and listicle spam
-$downrank=8,/top-10-*/
-$downrank=8,/best-*/
-$downrank=8,/*-comparison/
-$downrank=8,/*-alternatives/
-$downrank=6,/*-review/
-
-// Boost quality technical content patterns
-$boost=3,/documentation/
-$boost=3,/docs/
-$boost=3,/api/
-$boost=3,/reference/
-$boost=3,/guide/
-$boost=3,/tutorial/
-$boost=4,/blog/*/
-$boost=2,/changelog/
-$boost=2,/release-notes/
+$discard,site=researchgate.net
 
 // =============================================================================
 // SPECIFIC PROGRAMMING LANGUAGE BOOSTS
@@ -232,25 +198,3 @@ $boost=4,site=maven.apache.org
 $boost=4,site=isocpp.org
 $boost=4,site=gcc.gnu.org
 $boost=4,site=llvm.org
-
-// =============================================================================
-// FINAL FILTERS
-// =============================================================================
-
-// Boost recent content (last 2 years) for rapidly changing tech topics
-$boost=2,site=*/blog/2024/*
-$boost=2,site=*/blog/2023/*
-$boost=1,site=*/2024/*
-$boost=1,site=*/2023/*
-
-// Downrank very old content for fast-moving tech topics
-$downrank=3,site=*/2019/*
-$downrank=4,site=*/2018/*
-$downrank=5,site=*/2017/*
-$downrank=6,site=*/2016/*
-$downrank=8,site=*/2015/*
-$downrank=10,site=*/2014/*
-$downrank=10,site=*/2013/*
-$downrank=10,site=*/2012/*
-$downrank=10,site=*/2011/*
-$downrank=10,site=*/2010/*
