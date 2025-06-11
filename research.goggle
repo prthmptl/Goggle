@@ -35,12 +35,7 @@ $boost=8,site=github.com
 $boost=8,site=gitlab.com
 $boost=8,site=news.ycombinator.com
 $boost=8,site=lobste.rs
-$boost=8,site=reddit.com/r/programming
-$boost=8,site=reddit.com/r/webdev
-$boost=8,site=reddit.com/r/javascript
-$boost=8,site=reddit.com/r/python
-$boost=8,site=reddit.com/r/rust
-$boost=8,site=reddit.com/r/golang
+$boost=8,site=reddit.com
 $boost=8,site=dev.to
 
 // Established Tech Blogs and Publications
@@ -89,7 +84,7 @@ $boost=6,site=codecademy.com
 // Company Engineering Blogs
 $boost=6,site=engineering.fb.com
 $boost=6,site=netflixtechblog.com
-$boost=6,site=uber.com/blog
+$boost=6,site=uber.com
 $boost=6,site=dropbox.tech
 $boost=6,site=eng.airbnb.com
 $boost=6,site=engineering.atspotify.com
