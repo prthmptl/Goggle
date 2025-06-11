@@ -35,7 +35,12 @@ $boost=8,site=github.com
 $boost=8,site=gitlab.com
 $boost=8,site=news.ycombinator.com
 $boost=8,site=lobste.rs
-$boost=8,site=reddit.com
+$boost=8,site=reddit.com/r/programming
+$boost=8,site=reddit.com/r/webdev
+$boost=8,site=reddit.com/r/javascript
+$boost=8,site=reddit.com/r/python
+$boost=8,site=reddit.com/r/rust
+$boost=8,site=reddit.com/r/golang
 $boost=8,site=dev.to
 
 // Established Tech Blogs and Publications
@@ -84,22 +89,23 @@ $boost=6,site=codecademy.com
 // Company Engineering Blogs
 $boost=6,site=engineering.fb.com
 $boost=6,site=netflixtechblog.com
-$boost=6,site=uber.com
+$boost=6,site=uber.com/blog/engineering
 $boost=6,site=dropbox.tech
 $boost=6,site=eng.airbnb.com
 $boost=6,site=engineering.atspotify.com
 $boost=6,site=githubengineering.com
-$boost=6,site=blog.twitter.com
+$boost=6,site=blog.twitter.com/engineering
 $boost=6,site=engineering.linkedin.com
 $boost=6,site=slack.engineering
 $boost=6,site=eng.lyft.com
-
-
+$boost=6,site=medium.com/airbnb-engineering
+$boost=6,site=medium.com/netflix-techblog
 
 // =============================================================================
 // MODERATE BOOST - USEFUL BUT MIXED QUALITY
 // =============================================================================
 
+// General Tech News (can have some spam but mostly useful)
 // General Tech News (can have some spam but mostly useful)
 $boost=3,site=techcrunch.com
 $boost=3,site=theverge.com
@@ -109,7 +115,7 @@ $boost=3,site=gizmodo.com
 
 // Wikipedia (generally good for tech concepts)
 $boost=4,site=en.wikipedia.org
-
+$boost=3,site=*.wikipedia.org
 
 // =============================================================================
 // CONTENT FARM AND SEO SPAM - HEAVY DOWNRANK OR DISCARD
@@ -120,8 +126,8 @@ $discard,site=ehow.com
 $discard,site=wikihow.com
 $discard,site=answers.com
 $discard,site=ask.com
-$discard,site=yahoo.com
-$discard,site=quora.com
+$discard,site=yahoo.com/answers
+$discard,site=quora.com/*/answer/*
 $downrank=10,site=quora.com
 
 // Low-Quality Tutorial Mills
@@ -130,13 +136,13 @@ $discard,site=javatpoint.com
 $discard,site=geeksforgeeks.org
 $discard,site=programiz.com
 $discard,site=w3schools.com
-$downrank=8,site=codecademy.com
+$downrank=8,site=codecademy.com/forum-questions
 
 // Spam Domains and Scrapers
-$discard,site=blogspot.com
-$discard,site=wordpress.com
+$discard,site=*.blogspot.com
+$discard,site=*.wordpress.com/*/feed
 $discard,site=feedburner.com
-$discard,site=medium.com
+$discard,site=medium.com/feed
 $downrank=8,site=medium.com
 
 // Pinterest and Social Media Spam
@@ -149,14 +155,48 @@ $discard,site=pinterest.it
 $discard,site=pinterest.es
 $discard,site=instagram.com
 $discard,site=facebook.com
-$discard,site=twitter.com
+$discard,site=twitter.com/search
 
 // PDF Spam and Document Mills
-
+$downrank=5,*.pdf
 $discard,site=scribd.com
 $discard,site=slideshare.net
 $discard,site=academia.edu
-$discard,site=researchgate.net
+$discard,site=researchgate.net/publication
+
+// =============================================================================
+// SPECIFIC ANTI-SPAM PATTERNS
+// =============================================================================
+
+// Block common spam URL patterns
+$discard,/how-to-*-in-*-easy-steps/
+$discard,/ultimate-guide-to-*/
+$discard,/complete-tutorial-*/
+$discard,/*-tutorial-for-beginners/
+$discard,/learn-*-in-*-minutes/
+$discard,/top-*-tools-for-*/
+$discard,/*-vs-*-which-is-better/
+$discard,/best-*-for-*/
+$discard,/*-cheat-sheet/
+$downrank=5,/*/amp/
+
+// Block low-quality comparison and listicle spam
+$downrank=8,/top-10-*/
+$downrank=8,/best-*/
+$downrank=8,/*-comparison/
+$downrank=8,/*-alternatives/
+$downrank=6,/*-review/
+
+// Boost quality technical content patterns
+$boost=3,/documentation/
+$boost=3,/docs/
+$boost=3,/api/
+$boost=3,/reference/
+$boost=3,/guide/
+$boost=3,/tutorial/
+$boost=4,/blog/*/
+$boost=2,/changelog/
+$boost=2,/release-notes/
 
 // =============================================================================
 // SPECIFIC PROGRAMMING LANGUAGE BOOSTS
@@ -193,3 +233,223 @@ $boost=4,site=maven.apache.org
 $boost=4,site=isocpp.org
 $boost=4,site=gcc.gnu.org
 $boost=4,site=llvm.org
+
+// =============================================================================
+// RESEARCH AND ACADEMIC SOURCES
+// =============================================================================
+
+// Top-Tier Academic Databases and Journals
+$boost=10,site=arxiv.org
+$boost=10,site=acm.org
+$boost=10,site=ieee.org
+$boost=10,site=nature.com
+$boost=10,site=science.org
+$boost=10,site=sciencedirect.com
+$boost=10,site=springer.com
+$boost=10,site=pubmed.ncbi.nlm.nih.gov
+$boost=10,site=semanticscholar.org
+$boost=10,site=scholar.google.com
+
+// High-Quality Research Platforms and Preprints
+$boost=9,site=plos.org
+$boost=9,site=frontiersin.org
+$boost=9,site=mdpi.com
+$boost=9,site=hindawi.com
+$boost=9,site=biorxiv.org
+$boost=9,site=medrxiv.org
+$boost=9,site=chemrxiv.org
+$boost=9,site=papers.ssrn.com
+$boost=9,site=openreview.net
+
+// Academic Conferences and Professional Organizations
+$boost=8,site=researchgate.net
+$boost=8,site=academia.edu
+$boost=8,site=dblp.org
+$boost=8,site=iacr.org
+$boost=8,site=usenix.org
+$boost=8,site=computer.org
+$boost=8,site=sigcomm.org
+$boost=8,site=sigmod.org
+$boost=8,site=vldb.org
+$boost=8,site=neurips.cc
+$boost=8,site=icml.cc
+$boost=8,site=iclr.cc
+$boost=8,site=aaai.org
+$boost=8,site=ijcai.org
+$boost=8,site=ecai2020.eu
+$boost=8,site=aamas2021.soton.ac.uk
+$boost=7,site=distill.pub
+$boost=7,site=jmlr.org
+$boost=7,site=mlr.press
+$boost=7,site=proceedings.mlr.press
+$boost=7,site=openaccess.thecvf.com
+$boost=7,site=cvpr.thecvf.com
+$boost=7,site=iccv.thecvf.com
+$boost=7,site=eccv2020.eu
+$boost=7,site=nips.cc
+$boost=7,site=icra2021.org
+$boost=7,site=robotics.org
+$boost=7,site=humanrobotinteraction.org
+$boost=7,site=corl2020.org
+
+// Top Universities and Research Institutions
+$boost=6,site=mit.edu
+$boost=6,site=stanford.edu
+$boost=6,site=berkeley.edu
+$boost=6,site=cmu.edu
+$boost=6,site=caltech.edu
+$boost=6,site=ox.ac.uk
+$boost=6,site=cam.ac.uk
+$boost=6,site=imperial.ac.uk
+$boost=6,site=ethz.ch
+$boost=6,site=epfl.ch
+$boost=6,site=toronto.edu
+$boost=6,site=mcgill.ca
+$boost=6,site=ubc.ca
+$boost=6,site=utoronto.ca
+$boost=6,site=uwaterloo.ca
+$boost=6,site=mila.quebec
+$boost=6,site=deepmind.com
+$boost=6,site=openai.com
+$boost=6,site=anthropic.com
+$boost=6,site=research.google
+$boost=6,site=research.facebook.com
+$boost=6,site=research.microsoft.com
+$boost=6,site=research.adobe.com
+$boost=6,site=research.nvidia.com
+$boost=6,site=labs.oracle.com
+$boost=6,site=research.ibm.com
+$boost=6,site=research.amazon.com
+$boost=6,site=ai.google
+$boost=6,site=blog.research.google
+
+// Specialized Research Tools and Platforms
+$boost=5,site=paperswithcode.com
+$boost=5,site=huggingface.co
+$boost=5,site=kaggle.com
+$boost=5,site=towards-data-science.medium.com
+$boost=5,site=towardsdatascience.com
+$boost=5,site=machinelearningmastery.com
+$boost=5,site=analyticsvidhya.com
+$boost=5,site=kdnuggets.com
+$boost=5,site=datasciencecentral.com
+$boost=5,site=r-bloggers.com
+$boost=5,site=rstudio.com
+$boost=5,site=jupyter.org
+$boost=5,site=anaconda.com
+$boost=5,site=tensorflow.org
+$boost=5,site=pytorch.org
+$boost=5,site=scikit-learn.org
+$boost=5,site=pandas.pydata.org
+$boost=5,site=numpy.org
+$boost=5,site=scipy.org
+$boost=5,site=matplotlib.org
+$boost=5,site=seaborn.pydata.org
+$boost=5,site=plotly.com
+
+// Educational and Reference Platforms
+$boost=4,site=coursera.org
+$boost=4,site=edx.org
+$boost=4,site=udacity.com
+$boost=4,site=khan.edu
+$boost=4,site=brilliant.org
+$boost=4,site=mathworld.wolfram.com
+$boost=4,site=wolframalpha.com
+$boost=4,site=mathworks.com
+$boost=4,site=sagemath.org
+$boost=4,site=sympy.org
+$boost=4,site=gnu.org
+$boost=4,site=fsf.org
+$boost=4,site=apache.org
+$boost=4,site=eclipse.org
+$boost=4,site=mozilla.org
+$boost=4,site=w3c.org
+$boost=4,site=iana.org
+$boost=4,site=rfc-editor.org
+
+// Government Research Agencies and National Labs
+$boost=4,site=nist.gov
+$boost=4,site=nih.gov
+$boost=4,site=nsf.gov
+$boost=4,site=darpa.mil
+$boost=4,site=energy.gov
+$boost=4,site=nasa.gov
+$boost=4,site=cern.ch
+$boost=4,site=fermilab.gov
+$boost=4,site=slac.stanford.edu
+$boost=4,site=bnl.gov
+$boost=4,site=ornl.gov
+$boost=4,site=anl.gov
+$boost=4,site=lbl.gov
+$boost=4,site=lanl.gov
+$boost=4,site=llnl.gov
+$boost=4,site=pnnl.gov
+$boost=4,site=inl.gov
+
+// Professional Societies and Standards Organizations
+$boost=3,site=royalsociety.org
+$boost=3,site=nationalacademies.org
+$boost=3,site=nas.edu
+$boost=3,site=nae.edu
+$boost=3,site=nam.edu
+$boost=3,site=aps.org
+$boost=3,site=aaas.org
+$boost=3,site=osa.org
+$boost=3,site=spie.org
+$boost=3,site=aip.org
+$boost=3,site=iop.org
+$boost=3,site=rsc.org
+$boost=3,site=acs.org
+$boost=3,site=wiley.com
+$boost=3,site=elsevier.com
+$boost=3,site=tandfonline.com
+$boost=3,site=sagepub.com
+$boost=3,site=cambridge.org
+$boost=3,site=oup.com
+$boost=3,site=annualreviews.org
+
+// Medical and Health Research Sources
+$boost=3,site=cell.com
+$boost=3,site=thelancet.com
+$boost=3,site=nejm.org
+$boost=3,site=bmj.com
+$boost=3,site=jama.jamanetwork.com
+$boost=3,site=cochrane.org
+$boost=3,site=clinicaltrials.gov
+$boost=3,site=fda.gov
+$boost=3,site=cdc.gov
+$boost=3,site=who.int
+$boost=3,site=ema.europa.eu
+$boost=3,site=epa.gov
+
+// International Organizations and Policy Research
+$boost=3,site=ipcc.ch
+$boost=3,site=unep.org
+$boost=3,site=worldbank.org
+$boost=3,site=imf.org
+$boost=3,site=oecd.org
+$boost=3,site=un.org
+$boost=3,site=unesco.org
+$boost=3,site=wto.org
+
+// =============================================================================
+// FINAL FILTERS
+// =============================================================================
+
+// Boost recent content (last 2 years) for rapidly changing tech topics
+$boost=2,site=*/blog/2024/*
+$boost=2,site=*/blog/2023/*
+$boost=1,site=*/2024/*
+$boost=1,site=*/2023/*
+
+// Downrank very old content for fast-moving tech topics
+$downrank=3,site=*/2019/*
+$downrank=4,site=*/2018/*
+$downrank=5,site=*/2017/*
+$downrank=6,site=*/2016/*
+$downrank=8,site=*/2015/*
+$downrank=10,site=*/2014/*
+$downrank=10,site=*/2013/*
+$downrank=10,site=*/2012/*
+$downrank=10,site=*/2011/*
+$downrank=10,site=*/2010/*
