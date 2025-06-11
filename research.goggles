@@ -1,58 +1,256 @@
-Line 38: Invalid character in site value
-Line 39: Invalid character in site value
-Line 40: Invalid character in site value
-Line 41: Invalid character in site value
-Line 42: Invalid character in site value
-Line 43: Invalid character in site value
-Line 92: Invalid character in site value
-Line 97: Invalid character in site value
-Line 101: Invalid character in site value
-Line 102: Invalid character in site value
-Line 117: Invalid character in site value
-Line 128: Invalid character in site value
-Line 129: Invalid character in site value
-Line 138: Invalid character in site value
-Line 141: Invalid character in site value
-Line 142: Invalid character in site value
-Line 144: Invalid character in site value
-Line 157: Invalid character in site value
-Line 160: There was an error processing your Goggle
-Line 164: Invalid character in site value
-Line 171: There was an error processing your Goggle
-Line 172: There was an error processing your Goggle
-Line 173: There was an error processing your Goggle
-Line 174: There was an error processing your Goggle
-Line 175: There was an error processing your Goggle
-Line 176: There was an error processing your Goggle
-Line 177: There was an error processing your Goggle
-Line 178: There was an error processing your Goggle
-Line 179: There was an error processing your Goggle
-Line 180: There was an error processing your Goggle
-Line 183: There was an error processing your Goggle
-Line 184: There was an error processing your Goggle
-Line 185: There was an error processing your Goggle
-Line 186: There was an error processing your Goggle
-Line 187: There was an error processing your Goggle
-Line 190: There was an error processing your Goggle
-Line 191: There was an error processing your Goggle
-Line 192: There was an error processing your Goggle
-Line 193: There was an error processing your Goggle
-Line 194: There was an error processing your Goggle
-Line 195: There was an error processing your Goggle
-Line 196: There was an error processing your Goggle
-Line 197: There was an error processing your Goggle
-Line 198: There was an error processing your Goggle
-Line 241: Invalid character in site value
-Line 242: Invalid character in site value
-Line 243: Invalid character in site value
-Line 244: Invalid character in site value
-Line 247: Invalid character in site value
-Line 248: Invalid character in site value
-Line 249: Invalid character in site value
-Line 250: Invalid character in site value
-Line 251: Invalid character in site value
-Line 252: Invalid character in site value
-Line 253: Invalid character in site value
-Line 254: Invalid character in site value
-Line 255: Invalid character in site value
-Line 256: Invalid character in site value
+! name: Tech Search Anti-SEO Spam
+! description: Minimizes SEO spam for tech searches by boosting quality sources and filtering out content farms
+! public: true
+! author: Tech Search Enhancement
+! homepage: https://github.com/tech-search/anti-seo-spam
+! issues: https://github.com/tech-search/anti-seo-spam/issues
+! avatar: #00d4ff
+! license: MIT
+
+// =============================================================================
+// HIGH-QUALITY TECH SOURCES - BOOST HEAVILY
+// =============================================================================
+
+// Official Documentation and Standards
+$boost=10,site=developer.mozilla.org
+$boost=10,site=docs.python.org
+$boost=10,site=docs.oracle.com
+$boost=10,site=docs.microsoft.com
+$boost=10,site=kubernetes.io
+$boost=10,site=docker.com
+$boost=10,site=nodejs.org
+$boost=10,site=reactjs.org
+$boost=10,site=vuejs.org
+$boost=10,site=angular.io
+$boost=10,site=golang.org
+$boost=10,site=rust-lang.org
+$boost=10,site=cppreference.com
+$boost=10,site=w3.org
+$boost=10,site=rfc-editor.org
+$boost=10,site=ietf.org
+
+// Quality Programming Communities
+$boost=8,site=stackoverflow.com
+$boost=8,site=github.com
+$boost=8,site=gitlab.com
+$boost=8,site=news.ycombinator.com
+$boost=8,site=lobste.rs
+$boost=8,site=reddit.com/r/programming
+$boost=8,site=reddit.com/r/webdev
+$boost=8,site=reddit.com/r/javascript
+$boost=8,site=reddit.com/r/python
+$boost=8,site=reddit.com/r/rust
+$boost=8,site=reddit.com/r/golang
+$boost=8,site=dev.to
+
+// Established Tech Blogs and Publications
+$boost=7,site=martinfowler.com
+$boost=7,site=joelonsoftware.com
+$boost=7,site=codinghorror.com
+$boost=7,site=techcrunch.com
+$boost=7,site=arstechnica.com
+$boost=7,site=lwn.net
+$boost=7,site=ieee.org
+$boost=7,site=acm.org
+$boost=7,site=infoq.com
+$boost=7,site=smashingmagazine.com
+$boost=7,site=css-tricks.com
+$boost=7,site=a11yproject.com
+$boost=7,site=web.dev
+$boost=7,site=webkit.org
+$boost=7,site=v8.dev
+
+// Quality Individual Developer Blogs
+$boost=6,site=blog.golang.org
+$boost=6,site=blog.rust-lang.org
+$boost=6,site=pythonbytes.fm
+$boost=6,site=realpython.com
+$boost=6,site=fullstackpython.com
+$boost=6,site=jakearchibald.com
+$boost=6,site=addyosmani.com
+$boost=6,site=2ality.com
+$boost=6,site=exploringjs.com
+$boost=6,site=overreacted.io
+$boost=6,site=kentcdodds.com
+$boost=6,site=robinwieruch.de
+$boost=6,site=joshwcomeau.com
+$boost=6,site=levelup.gitconnected.com
+
+// Educational Platforms (Quality Tech Content)
+$boost=6,site=freecodecamp.org
+$boost=6,site=coursera.org
+$boost=6,site=edx.org
+$boost=6,site=udacity.com
+$boost=6,site=pluralsight.com
+$boost=6,site=egghead.io
+$boost=6,site=frontendmasters.com
+$boost=6,site=codecademy.com
+
+// Company Engineering Blogs
+$boost=6,site=engineering.fb.com
+$boost=6,site=netflixtechblog.com
+$boost=6,site=uber.com/blog/engineering
+$boost=6,site=dropbox.tech
+$boost=6,site=eng.airbnb.com
+$boost=6,site=engineering.atspotify.com
+$boost=6,site=githubengineering.com
+$boost=6,site=blog.twitter.com/engineering
+$boost=6,site=engineering.linkedin.com
+$boost=6,site=slack.engineering
+$boost=6,site=eng.lyft.com
+$boost=6,site=medium.com/airbnb-engineering
+$boost=6,site=medium.com/netflix-techblog
+
+// =============================================================================
+// MODERATE BOOST - USEFUL BUT MIXED QUALITY
+// =============================================================================
+
+// General Tech News (can have some spam but mostly useful)
+$boost=3,site=techcrunch.com
+$boost=3,site=theverge.com
+$boost=3,site=wired.com
+$boost=3,site=engadget.com
+$boost=3,site=gizmodo.com
+
+// Wikipedia (generally good for tech concepts)
+$boost=4,site=en.wikipedia.org
+$boost=3,site=*.wikipedia.org
+
+// =============================================================================
+// CONTENT FARM AND SEO SPAM - HEAVY DOWNRANK OR DISCARD
+// =============================================================================
+
+// Known Content Farms
+$discard,site=ehow.com
+$discard,site=wikihow.com
+$discard,site=answers.com
+$discard,site=ask.com
+$discard,site=yahoo.com/answers
+$discard,site=quora.com/*/answer/*
+$downrank=10,site=quora.com
+
+// Low-Quality Tutorial Mills
+$discard,site=tutorialspoint.com
+$discard,site=javatpoint.com
+$discard,site=geeksforgeeks.org
+$discard,site=programiz.com
+$discard,site=w3schools.com
+$downrank=8,site=codecademy.com/forum-questions
+
+// Spam Domains and Scrapers
+$discard,site=*.blogspot.com
+$discard,site=*.wordpress.com/*/feed
+$discard,site=feedburner.com
+$discard,site=medium.com/feed
+$downrank=8,site=medium.com
+
+// Pinterest and Social Media Spam
+$discard,site=pinterest.com
+$discard,site=pinterest.co.uk
+$discard,site=pinterest.ca
+$discard,site=pinterest.de
+$discard,site=pinterest.fr
+$discard,site=pinterest.it
+$discard,site=pinterest.es
+$discard,site=instagram.com
+$discard,site=facebook.com
+$discard,site=twitter.com/search
+
+// PDF Spam and Document Mills
+$downrank=5,*.pdf
+$discard,site=scribd.com
+$discard,site=slideshare.net
+$discard,site=academia.edu
+$discard,site=researchgate.net/publication
+
+// =============================================================================
+// SPECIFIC ANTI-SPAM PATTERNS
+// =============================================================================
+
+// Block common spam URL patterns
+$discard,/how-to-*-in-*-easy-steps/
+$discard,/ultimate-guide-to-*/
+$discard,/complete-tutorial-*/
+$discard,/*-tutorial-for-beginners/
+$discard,/learn-*-in-*-minutes/
+$discard,/top-*-tools-for-*/
+$discard,/*-vs-*-which-is-better/
+$discard,/best-*-for-*/
+$discard,/*-cheat-sheet/
+$downrank=5,/*/amp/
+
+// Block low-quality comparison and listicle spam
+$downrank=8,/top-10-*/
+$downrank=8,/best-*/
+$downrank=8,/*-comparison/
+$downrank=8,/*-alternatives/
+$downrank=6,/*-review/
+
+// Boost quality technical content patterns
+$boost=3,/documentation/
+$boost=3,/docs/
+$boost=3,/api/
+$boost=3,/reference/
+$boost=3,/guide/
+$boost=3,/tutorial/
+$boost=4,/blog/*/
+$boost=2,/changelog/
+$boost=2,/release-notes/
+
+// =============================================================================
+// SPECIFIC PROGRAMMING LANGUAGE BOOSTS
+// =============================================================================
+
+// Python
+$boost=5,site=python.org
+$boost=5,site=pypi.org
+$boost=4,site=peps.python.org
+$boost=4,site=docs.python.org
+
+// JavaScript/TypeScript
+$boost=5,site=tc39.es
+$boost=5,site=npmjs.com
+$boost=4,site=typescriptlang.org
+$boost=4,site=babeljs.io
+$boost=4,site=webpack.js.org
+
+// Rust
+$boost=5,site=crates.io
+$boost=4,site=rustup.rs
+$boost=4,site=forge.rust-lang.org
+
+// Go
+$boost=4,site=pkg.go.dev
+$boost=4,site=goproxy.io
+
+// Java
+$boost=4,site=openjdk.java.net
+$boost=4,site=spring.io
+$boost=4,site=maven.apache.org
+
+// C/C++
+$boost=4,site=isocpp.org
+$boost=4,site=gcc.gnu.org
+$boost=4,site=llvm.org
+
+// =============================================================================
+// FINAL FILTERS
+// =============================================================================
+
+// Boost recent content (last 2 years) for rapidly changing tech topics
+$boost=2,site=*/blog/2024/*
+$boost=2,site=*/blog/2023/*
+$boost=1,site=*/2024/*
+$boost=1,site=*/2023/*
+
+// Downrank very old content for fast-moving tech topics
+$downrank=3,site=*/2019/*
+$downrank=4,site=*/2018/*
+$downrank=5,site=*/2017/*
+$downrank=6,site=*/2016/*
+$downrank=8,site=*/2015/*
+$downrank=10,site=*/2014/*
+$downrank=10,site=*/2013/*
+$downrank=10,site=*/2012/*
+$downrank=10,site=*/2011/*
+$downrank=10,site=*/2010/*
