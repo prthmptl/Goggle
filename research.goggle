@@ -7,11 +7,6 @@
 ! avatar: #00d4ff
 ! license: MIT
 
-// =============================================================================
-// HIGH-QUALITY TECH SOURCES - BOOST HEAVILY
-// =============================================================================
-
-// Official Documentation and Standards
 $boost=10,site=developer.mozilla.org
 $boost=10,site=docs.python.org
 $boost=10,site=docs.oracle.com
@@ -29,7 +24,6 @@ $boost=10,site=w3.org
 $boost=10,site=rfc-editor.org
 $boost=10,site=ietf.org
 
-// Quality Programming Communities
 $boost=8,site=stackoverflow.com
 $boost=8,site=github.com
 $boost=8,site=gitlab.com
@@ -38,7 +32,6 @@ $boost=8,site=lobste.rs
 $boost=8,site=reddit.com
 $boost=8,site=dev.to
 
-// Established Tech Blogs and Publications
 $boost=7,site=martinfowler.com
 $boost=7,site=joelonsoftware.com
 $boost=7,site=codinghorror.com
@@ -55,7 +48,6 @@ $boost=7,site=web.dev
 $boost=7,site=webkit.org
 $boost=7,site=v8.dev
 
-// Quality Individual Developer Blogs
 $boost=6,site=blog.golang.org
 $boost=6,site=blog.rust-lang.org
 $boost=6,site=pythonbytes.fm
@@ -71,7 +63,6 @@ $boost=6,site=robinwieruch.de
 $boost=6,site=joshwcomeau.com
 $boost=6,site=levelup.gitconnected.com
 
-// Educational Platforms (Quality Tech Content)
 $boost=6,site=freecodecamp.org
 $boost=6,site=coursera.org
 $boost=6,site=edx.org
@@ -81,7 +72,6 @@ $boost=6,site=egghead.io
 $boost=6,site=frontendmasters.com
 $boost=6,site=codecademy.com
 
-// Company Engineering Blogs
 $boost=6,site=engineering.fb.com
 $boost=6,site=netflixtechblog.com
 $boost=6,site=uber.com
@@ -94,28 +84,14 @@ $boost=6,site=engineering.linkedin.com
 $boost=6,site=slack.engineering
 $boost=6,site=eng.lyft.com
 
-
-
-// =============================================================================
-// MODERATE BOOST - USEFUL BUT MIXED QUALITY
-// =============================================================================
-
-// General Tech News (can have some spam but mostly useful)
 $boost=3,site=techcrunch.com
 $boost=3,site=theverge.com
 $boost=3,site=wired.com
 $boost=3,site=engadget.com
 $boost=3,site=gizmodo.com
 
-// Wikipedia (generally good for tech concepts)
 $boost=4,site=en.wikipedia.org
 
-
-// =============================================================================
-// CONTENT FARM AND SEO SPAM - HEAVY DOWNRANK OR DISCARD
-// =============================================================================
-
-// Known Content Farms
 $discard,site=ehow.com
 $discard,site=wikihow.com
 $discard,site=answers.com
@@ -124,7 +100,6 @@ $discard,site=yahoo.com
 $discard,site=quora.com
 $downrank=10,site=quora.com
 
-// Low-Quality Tutorial Mills
 $discard,site=tutorialspoint.com
 $discard,site=javatpoint.com
 $discard,site=geeksforgeeks.org
@@ -132,14 +107,12 @@ $discard,site=programiz.com
 $discard,site=w3schools.com
 $downrank=8,site=codecademy.com
 
-// Spam Domains and Scrapers
 $discard,site=blogspot.com
 $discard,site=wordpress.com
 $discard,site=feedburner.com
 $discard,site=medium.com
 $downrank=8,site=medium.com
 
-// Pinterest and Social Media Spam
 $discard,site=pinterest.com
 $discard,site=pinterest.co.uk
 $discard,site=pinterest.ca
@@ -151,45 +124,33 @@ $discard,site=instagram.com
 $discard,site=facebook.com
 $discard,site=twitter.com
 
-// PDF Spam and Document Mills
-
 $discard,site=scribd.com
 $discard,site=slideshare.net
 $discard,site=academia.edu
 $discard,site=researchgate.net
 
-// =============================================================================
-// SPECIFIC PROGRAMMING LANGUAGE BOOSTS
-// =============================================================================
-
-// Python
 $boost=5,site=python.org
 $boost=5,site=pypi.org
 $boost=4,site=peps.python.org
 $boost=4,site=docs.python.org
 
-// JavaScript/TypeScript
 $boost=5,site=tc39.es
 $boost=5,site=npmjs.com
 $boost=4,site=typescriptlang.org
 $boost=4,site=babeljs.io
 $boost=4,site=webpack.js.org
 
-// Rust
 $boost=5,site=crates.io
 $boost=4,site=rustup.rs
 $boost=4,site=forge.rust-lang.org
 
-// Go
 $boost=4,site=pkg.go.dev
 $boost=4,site=goproxy.io
 
-// Java
 $boost=4,site=openjdk.java.net
 $boost=4,site=spring.io
 $boost=4,site=maven.apache.org
 
-// C/C++
 $boost=4,site=isocpp.org
 $boost=4,site=gcc.gnu.org
 $boost=4,site=llvm.org
