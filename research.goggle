@@ -1440,7 +1440,6 @@ $boost=6,site=ntu.edu.sg
 /blog^$boost=4,site=blog.ycombinator.com
 /blog^$boost=4,site=githubengineering.com
 /blog^$boost=4,site=eng.snap.com
-/blog^$boost=4,site=medium.com/@NetflixTechBlog
 /blog^$boost=4,site=blog.jetbrains.com
 /blog^$boost=4,site=blog.docker.com
 /blog^$boost=4,site=kubernetes.io
@@ -1458,3 +1457,4 @@ $boost=5,site=networkworld.com
 $boost=5,site=securityweek.com
 $boost=5,site=darkreading.com
 $boost=5,site=bleepingcomputer.com
+$boost=5,site=netflixtechblog.medium.com
