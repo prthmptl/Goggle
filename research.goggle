@@ -4,7 +4,7 @@
 ! author: Pratham
 ! homepage: https://github.com/prthmptl/Goggle
 ! issues: https://github.com/prthmptl/Goggle/issues
-! avatar: #00d4ff
+! avatar: #000080
 ! license: MIT
 
 $boost=10,site=developer.mozilla.org
@@ -23,6 +23,7 @@ $boost=10,site=cppreference.com
 $boost=10,site=w3.org
 $boost=10,site=rfc-editor.org
 $boost=10,site=ietf.org
+$boost=10,site=cp-algorithms.com
 
 $boost=8,site=stackoverflow.com
 $boost=8,site=github.com
