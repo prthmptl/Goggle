@@ -35,7 +35,7 @@ $boost=8,site=dev.to
 
 $boost=7,site=martinfowler.com
 $boost=7,site=joelonsoftware.com
-$boost=7,site=codinghorror.com
+$boost=7,site=blog.codinghorror.com
 $boost=7,site=techcrunch.com
 $boost=7,site=arstechnica.com
 $boost=7,site=lwn.net
@@ -71,7 +71,6 @@ $boost=6,site=udacity.com
 $boost=6,site=pluralsight.com
 $boost=6,site=egghead.io
 $boost=6,site=frontendmasters.com
-$boost=6,site=codecademy.com
 
 $boost=6,site=engineering.fb.com
 $boost=6,site=dropbox.tech
@@ -82,13 +81,12 @@ $boost=6,site=blog.twitter.com
 $boost=6,site=engineering.linkedin.com
 $boost=6,site=slack.engineering
 $boost=6,site=eng.lyft.com
-$boost=6,site=medium.com
 
-$boost=3,site=techcrunch.com
 $boost=3,site=theverge.com
 $boost=3,site=wired.com
 $boost=3,site=engadget.com
 $boost=3,site=gizmodo.com
+$boost=3,site=elbrujohalcon.medium.com
 
 $boost=4,site=en.wikipedia.org
 
@@ -98,7 +96,6 @@ $discard,site=answers.com
 $discard,site=ask.com
 $discard,site=yahoo.com
 $discard,site=quora.com
-$downrank=10,site=quora.com
 
 $discard,site=tutorialspoint.com
 $discard,site=javatpoint.com
@@ -111,7 +108,6 @@ $discard,site=blogspot.com
 $discard,site=wordpress.com
 $discard,site=feedburner.com
 $discard,site=medium.com
-$downrank=8,site=medium.com
 
 $discard,site=pinterest.com
 $discard,site=pinterest.co.uk
@@ -126,8 +122,6 @@ $discard,site=twitter.com
 
 $discard,site=scribd.com
 $discard,site=slideshare.net
-$discard,site=academia.edu
-$discard,site=researchgate.net
 
 $boost=5,site=python.org
 $boost=5,site=pypi.org
@@ -159,12 +153,12 @@ $boost=10,site=arxiv.org
 $boost=10,site=acm.org
 $boost=10,site=ieee.org
 $boost=10,site=nature.com
-$boost=10,site=science.org
 $boost=10,site=sciencedirect.com
 $boost=10,site=springer.com
 $boost=10,site=pubmed.ncbi.nlm.nih.gov
 $boost=10,site=semanticscholar.org
 $boost=10,site=scholar.google.com
+$boost=10,site=research.yandex.com
 
 $boost=9,site=plos.org
 $boost=9,site=frontiersin.org
@@ -206,16 +200,7 @@ $boost=7,site=robotics.org
 $boost=7,site=humanrobotinteraction.org
 $boost=7,site=corl2020.org
 
-$boost=6,site=mit.edu
-$boost=6,site=stanford.edu
-$boost=6,site=berkeley.edu
-$boost=6,site=cmu.edu
-$boost=6,site=caltech.edu
-$boost=6,site=ox.ac.uk
-$boost=6,site=cam.ac.uk
-$boost=6,site=imperial.ac.uk
 $boost=6,site=ethz.ch
-$boost=6,site=epfl.ch
 $boost=6,site=toronto.edu
 $boost=6,site=mcgill.ca
 $boost=6,site=ubc.ca
@@ -239,7 +224,6 @@ $boost=6,site=blog.research.google
 $boost=5,site=paperswithcode.com
 $boost=5,site=huggingface.co
 $boost=5,site=kaggle.com
-$boost=5,site=towards-data-science.medium.com
 $boost=5,site=towardsdatascience.com
 $boost=5,site=machinelearningmastery.com
 $boost=5,site=analyticsvidhya.com
@@ -262,7 +246,7 @@ $boost=5,site=plotly.com
 $boost=4,site=coursera.org
 $boost=4,site=edx.org
 $boost=4,site=udacity.com
-$boost=4,site=khan.edu
+$boost=4,site=khanacademy.org
 $boost=4,site=brilliant.org
 $boost=4,site=mathworld.wolfram.com
 $boost=4,site=wolframalpha.com
@@ -276,7 +260,7 @@ $boost=4,site=eclipse.org
 $boost=4,site=mozilla.org
 $boost=4,site=w3c.org
 $boost=4,site=iana.org
-$boost=4,site=rfc-editor.org
+
 
 $boost=4,site=nist.gov
 $boost=4,site=nih.gov
@@ -310,14 +294,11 @@ $boost=3,site=iop.org
 $boost=3,site=rsc.org
 $boost=3,site=acs.org
 $boost=3,site=wiley.com
-$boost=3,site=elsevier.com
-$boost=3,site=tandfonline.com
 $boost=3,site=sagepub.com
 $boost=3,site=cambridge.org
 $boost=3,site=oup.com
 $boost=3,site=annualreviews.org
 
-$boost=3,site=cell.com
 $boost=3,site=thelancet.com
 $boost=3,site=nejm.org
 $boost=3,site=bmj.com
@@ -339,9 +320,6 @@ $boost=3,site=un.org
 $boost=3,site=unesco.org
 $boost=3,site=wto.org
 
-$boost=6,site=harvard.edu
-$boost=6,site=yale.edu
-$boost=6,site=princeton.edu
 $boost=6,site=columbia.edu
 $boost=6,site=cornell.edu
 $boost=6,site=upenn.edu
@@ -388,7 +366,6 @@ $boost=6,site=polimi.it
 $boost=6,site=sissa.it
 $boost=6,site=ictp.it
 
-$boost=6,site=u-tokyo.ac.jp
 $boost=6,site=kyoto-u.ac.jp
 $boost=6,site=riken.jp
 $boost=6,site=titech.ac.jp
@@ -401,9 +378,6 @@ $boost=6,site=sjtu.edu.cn
 $boost=6,site=fudan.edu.cn
 $boost=6,site=ustc.edu.cn
 $boost=6,site=cas.cn
-$boost=6,site=nus.edu.sg
-$boost=6,site=ntu.edu.sg
-$boost=6,site=a-star.edu.sg
 $boost=6,site=hku.hk
 $boost=6,site=cuhk.edu.hk
 $boost=6,site=ust.hk
@@ -571,7 +545,6 @@ $boost=7,site=packetstormsecurity.com
 $boost=7,site=securityfocus.com
 $boost=7,site=schneier.com
 $boost=7,site=krebsonsecurity.com
-$boost=7,site=darkreading.com
 
 $boost=6,site=postgresql.org
 $boost=6,site=mysql.com
@@ -809,7 +782,6 @@ $boost=8,site=ieee-ras.org
 $boost=8,site=ijrr.org
 $boost=8,site=iros.org
 $boost=8,site=icra.org
-$boost=8,site=rss.org
 $boost=8,site=ros.org
 $boost=8,site=gazebosim.org
 $boost=8,site=moveit.ros.org
@@ -1015,8 +987,6 @@ $discard,site=freeprojectz.com
 $discard,site=nevonprojects.com
 $discard,site=1000projects.com
 
-$discard,site=scribd.com
-$discard,site=slideshare.net
 $discard,site=issuu.com
 $discard,site=calameo.com
 $discard,site=docdroid.net
@@ -1220,18 +1190,10 @@ $downrank=8,site=squarespace.com
 /r/optimization^$boost=5,site=reddit.com
 /r/MachineLearningMemes^$boost=3,site=reddit.com
 
-$boost=8,site=arxiv.org
-$boost=8,site=scholar.google.com
-$boost=8,site=researchgate.net
-$boost=8,site=semanticscholar.org
-$boost=8,site=pubmed.ncbi.nlm.nih.gov
-$boost=7,site=nature.com
 $boost=7,site=science.org
 $boost=7,site=cell.com
 $boost=7,site=plos.org
-$boost=7,site=springer.com
 $boost=7,site=elsevier.com
-$boost=7,site=wiley.com
 $boost=7,site=tandfonline.com
 $boost=7,site=jstor.org
 
@@ -1255,7 +1217,6 @@ $boost=6,site=ntu.edu.sg
 /?category=Engineering^$boost=3,site=blog.siftscience.com
 /?category=Engineering^$boost=3,site=blog.venmo.com
 /@InstagramEng^$boost=3,site=engineering.instagram.com
-/@elbrujohalcon^$boost=3,site=medium.com
 /articles^$boost=3,site=michaelgallego.fr
 /ateam^$boost=3,site=planet.mozilla.org
 /b/abhinaba^$boost=3,site=blogs.msdn.com
@@ -1323,7 +1284,7 @@ $boost=6,site=ntu.edu.sg
 /blog^$boost=3,site=laravel-news.com
 /blog^$boost=3,site=madetech.com
 /blog^$boost=3,site=maptiler.com
-/blog^$boost=3,site=mesosphere.com
+/blog^$boost=3,site=d2iq.com
 /blog^$boost=3,site=multithreaded.stitchfix.com
 /blog^$boost=3,site=netmeister.org
 /blog^$boost=3,site=neverfriday.com
@@ -1422,7 +1383,6 @@ $boost=6,site=ntu.edu.sg
 /technical-blog^$boost=3,site=future-processing.pl
 /tutorial^$boost=3,site=codementor.io
 
-/blog^$boost=4,site=netflixtechblog.com
 /blog^$boost=4,site=engineering.fb.com
 /blog^$boost=4,site=ai.googleblog.com
 /blog^$boost=4,site=aws.amazon.com
@@ -1444,9 +1404,6 @@ $boost=6,site=ntu.edu.sg
 /blog^$boost=4,site=kubernetes.io
 /blog^$boost=4,site=istio.io
 
-$boost=5,site=wired.com
-$boost=5,site=theverge.com
-$boost=5,site=engadget.com
 $boost=5,site=venturebeat.com
 $boost=5,site=zdnet.com
 $boost=5,site=computerworld.com
