@@ -152,6 +152,8 @@ $boost=10,site=pubmed.ncbi.nlm.nih.gov
 $boost=10,site=semanticscholar.org
 $boost=10,site=scholar.google.com
 $boost=10,site=research.yandex.com
+$boost=10,site=ssrn.com
+/sol3^$boost=10,site=papers.ssrn.com
 
 $boost=9,site=frontiersin.org
 $boost=9,site=mdpi.com
