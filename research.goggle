@@ -533,6 +533,7 @@ $boost=6,site=mysql.com
 $boost=6,site=mariadb.org
 $boost=6,site=sqlite.org
 $boost=6,site=mongodb.com
+/docs^$boost=6,site=mongodb.com
 $boost=6,site=redis.io
 $boost=6,site=cassandra.apache.org
 $boost=6,site=neo4j.com
