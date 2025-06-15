@@ -24,6 +24,8 @@ $boost=10,site=w3.org
 $boost=10,site=rfc-editor.org
 $boost=10,site=ietf.org
 $boost=10,site=cp-algorithms.com
+$boost=10,site=simonwillison.net
+/p^$boost=10,site=latent.space
 
 $boost=8,site=stackoverflow.com
 $boost=8,site=github.com
