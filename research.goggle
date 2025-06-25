@@ -157,6 +157,8 @@ $boost=10,site=scholar.google.com
 $boost=10,site=research.yandex.com
 $boost=10,site=ssrn.com
 /sol3^$boost=10,site=papers.ssrn.com
+$boost=10,site=sciencedaily.com
+/releases^$boost=10,site=sciencedaily.com
 
 $boost=9,site=frontiersin.org
 $boost=9,site=mdpi.com
