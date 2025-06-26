@@ -27,6 +27,8 @@ $boost=10,site=cp-algorithms.com
 $boost=10,site=simonwillison.net
 /p^$boost=10,site=latent.space
 $boost=10,site=lilianweng.github.io
+$boost=10,site=ai.stackexchange.com
+$boost=10,site=datascience.stackexchange.com
 
 $boost=8,site=stackoverflow.com
 $boost=8,site=github.com
